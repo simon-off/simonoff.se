@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;900&display=swap");
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: "Figtree", sans-serif;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	display: flex;
+}
+
+#wrapper {
+	background-color: white;
+	flex: 1;
+}
+
+#banner {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 20vh;
+}
+
+#simonoff {
+	font-weight: 900;
+	font-size: clamp(30px, 16vw, 200px);
+}
+
+#simon {
+	color: #181818;
+}
+
+#off {
+	color: #e8e8e8;
+}
+
+.mail {
+	font-size: medium;
+	font-weight: 300;
+	letter-spacing: 3px;
+	font-size: clamp(12px, 2vw, 20px);
+	color: #777;
+}
