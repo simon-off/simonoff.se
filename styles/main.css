@@ -93,9 +93,6 @@ body {
 	padding: var(--size-padding);
 }
 
-main {
-}
-
 p {
 	color: var(--color-text);
 }
