@@ -1,8 +1,9 @@
 @import "colors-light.css";
 @import "sizes.css";
-@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@400;700;900&display=swap");
 
 /* A Modern CSS Reset - Piccalil */
+
 /* Box sizing rules */
 *,
 *::before,
@@ -77,7 +78,6 @@ select {
 }
 
 /* My stuff */
-
 * {
 	font-family: "Figtree", sans-serif;
 	transition-property: color, background-color;
@@ -85,23 +85,62 @@ select {
 	transition-timing-function: ease-in-out;
 }
 
-body {
-	background-color: var(--color-bg);
-	max-width: 1140px;
-	margin: auto;
-	/* background-color: antiquewhite; */
-	padding: var(--size-padding);
+html {
+	height: 100%;
 }
 
-p {
+body {
+	height: 100%;
+	background-color: var(--color-bg);
+	/* background-color: antiquewhite; */
+	padding: var(--size-padding);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main {
+	max-width: 1000px;
+	padding-bottom: 4rem;
+	text-align: center;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
 	color: var(--color-text);
+	font-size: 1rem;
+	margin-top: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	a {
+		font-size: 0.8rem;
+		margin-top: 0.8rem;
+	}
+}
+
+/* Utility classes */
+.no-break {
+	white-space: nowrap;
 }
 
 /* Banner and dark-mode toggle */
 #simonoff {
-	text-align: center;
 	font-weight: 900;
-	font-size: clamp(8px, 17vw, 192px);
+	font-size: clamp(8px, 14vw, 181px);
 	margin-top: 0rem;
 }
 
@@ -119,11 +158,17 @@ p {
 	background-color: var(--color-text);
 	padding: 0.03em;
 	border-radius: 50%;
+	cursor: pointer;
+	transition-property: padding;
+	transition-duration: 100ms;
+	transition-timing-function: ease-in-out;
 }
 
-/* Navigation bar */
-nav {
-	display: flex;
-	justify-content: space-around;
-	border: solid 1px var(--color-text);
+#color-mode-toggle:hover {
+	padding: 0.05em;
+}
+
+.subtitle {
+	font-weight: 400;
+	opacity: 0.9;
 }
