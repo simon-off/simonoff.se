@@ -1,0 +1,19 @@
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  text-align: center;
+  padding-block: calc(var(--drem) * 3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(var(--drem) * 2);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  text-transform: capitalize;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "portfolio2000",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.0.0"
+  },
+  "dependencies": {
+    "@fontsource/poppins": "^4.5.10",
+    "@fontsource/rubik": "^4.5.14",
+    "sass": "^1.58.0"
+  }
+}
