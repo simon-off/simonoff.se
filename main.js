@@ -6,3 +6,4 @@ import "@fontsource/jetbrains-mono";
 import "@fontsource/jetbrains-mono/800.css";
 import "./scss/main.scss";
 import "./js/zigzag";
+import "./js/onload";

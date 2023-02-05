@@ -1,34 +1,40 @@
-html {
-  scroll-behavior: smooth;
+.intro {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: calc(var(--drem) * 3);
+  padding-bottom: 8vh;
 }
 
 header {
   text-align: center;
-  padding-block: calc(var(--drem) * 3);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: calc(var(--drem) * 2);
+  gap: calc(var(--drem) * 1);
 }
 
 nav {
   display: flex;
   justify-content: center;
-  gap: var(--drem);
   text-transform: capitalize;
   font-size: min(1.25rem, 4.25vw);
+  a {
+    padding: var(--drem);
+  }
 }
 
 #about {
   display: flex;
-  row-gap: 2rem;
+  row-gap: 1.5rem;
   align-items: center;
   @media screen and (max-width: 700px) {
     flex-flow: column-reverse;
   }
   max-width: var(--max-width-s);
   margin-inline: auto;
-  padding-inline: var(--inline-spacing);
+  padding-inline: calc(var(--drem) * 3);
   p {
     padding-top: 1em;
   }
@@ -39,9 +45,9 @@ nav {
   img {
     object-fit: contain;
     image-rendering: optimizeQuality;
+    user-select: none;
   }
   .glasses {
-    // visibility: hidden;
     transform-origin: right;
     image-rendering: pixelated;
     position: absolute;
@@ -50,9 +56,8 @@ nav {
     width: 60%;
     rotate: 15deg;
     opacity: 0;
-    transition: 500ms;
+    transition-timing-function: cubic-bezier(0.075, 0.5, 0.1, 1.2);
     &.clicked {
-      // visibility: visible;
       top: 24%;
       left: 13%;
       width: 60%;
@@ -60,4 +65,16 @@ nav {
       opacity: 1;
     }
   }
+}
+
+#projects {
+  max-width: var(--max-width-l);
+  margin-inline: auto;
+  padding: calc(var(--drem) * 3);
+}
+
+#contact {
+  max-width: var(--max-width-m);
+  margin-inline: auto;
+  padding: calc(var(--drem) * 3);
 }
