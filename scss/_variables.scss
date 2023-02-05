@@ -1,7 +1,18 @@
 :root {
+  // Sizes
+  --max-width-l: 1400px;
+  --max-width-s: 1000px;
   --drem: 1rem;
+  --inline-spacing: calc(var(--drem) * 3);
+  @media screen and (max-width: 800px) {
+    --drem: 0.75rem;
+  }
+  @media screen and (max-width: 500px) {
+    --drem: 0.5rem;
+  }
 
   --color-text: hsl(0, 0%, 95%);
   --color-bg: hsl(0, 0%, 5%);
+  --color-border-subtle: hsl(0, 0%, 15%);
   --color-grey: grey;
 }

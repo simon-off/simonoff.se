@@ -1,5 +1,6 @@
 const navlinks = document.querySelectorAll(".navlink");
 const banner = document.querySelector(".banner");
+const glasses = document.querySelector(".glasses");
 
 function addClassesToElements(input, [class1, bp1], [class2, bp2], [class3, bp3]) {
   for (let i = 0; i < input.length; i++) {
@@ -56,7 +57,10 @@ banner.innerHTML = spanString(banner.innerText);
 addClassesToElements(banner.children, ["sim", 3], ["on", 5], ["off", 8]);
 banner.addEventListener("mouseover", () => translateChildrenZigZag(banner, 0.125));
 banner.addEventListener("mouseout", () => translateChildrenZigZag(banner, 0));
-banner.addEventListener("click", () => banner.classList.toggle("clicked"));
+banner.addEventListener("click", () => {
+  banner.classList.toggle("clicked");
+  glasses.classList.toggle("clicked");
+});
 for (let i = banner.children.length - 1; i >= 0; i--) {
   console.log("hello");
   banner.children[i].style.animationDelay = `${i * 100 + 100}ms`;

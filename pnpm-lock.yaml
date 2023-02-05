@@ -1,12 +1,14 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@fontsource/jetbrains-mono': ^4.5.12
   '@fontsource/poppins': ^4.5.10
   '@fontsource/rubik': ^4.5.14
   sass: ^1.58.0
   vite: ^4.0.0
 
 dependencies:
+  '@fontsource/jetbrains-mono': 4.5.12
   '@fontsource/poppins': 4.5.10
   '@fontsource/rubik': 4.5.14
   sass: 1.58.0
@@ -213,6 +215,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@fontsource/jetbrains-mono/4.5.12:
+    resolution: {integrity: sha512-LJF1ala1/u+wXZmESFqIk08FA9yGX4/uAAleCHmXUMgEjvNAYFHUQQ7eK5hQQoBOwh99cU5suTrqYqEkgzwzPA==}
+    dev: false
 
   /@fontsource/poppins/4.5.10:
     resolution: {integrity: sha512-oYZVHsnlwV3VWM1SE/m6SUxVh0QLk5+2wB+lBiXcI7N/0KVQWmV9YykaPqfJHBLvmdya+MAOnv+BQHeLU1vOOw==}

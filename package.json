@@ -12,6 +12,7 @@
     "vite": "^4.0.0"
   },
   "dependencies": {
+    "@fontsource/jetbrains-mono": "^4.5.12",
     "@fontsource/poppins": "^4.5.10",
     "@fontsource/rubik": "^4.5.14",
     "sass": "^1.58.0"

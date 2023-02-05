@@ -15,11 +15,29 @@
     translate: 0 0;
     opacity: 0;
   }
-  50% {
-    translate: 0 -0.05em;
+  40% {
+    translate: 0 -0.1em;
   }
   100% {
     opacity: 1;
     translate: 0 0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  43% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  93% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
