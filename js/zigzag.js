@@ -62,6 +62,5 @@ banner.addEventListener("click", () => {
   glasses.classList.toggle("clicked");
 });
 for (let i = banner.children.length - 1; i >= 0; i--) {
-  console.log("hello");
   banner.children[i].style.animationDelay = `${i * 100 + 100}ms`;
 }

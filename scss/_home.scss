@@ -4,7 +4,8 @@
   flex-direction: column;
   justify-content: center;
   gap: calc(var(--drem) * 3);
-  padding-bottom: 8vh;
+  padding-bottom: 8vmin;
+  padding-top: 1rem;
 }
 
 header {
@@ -60,7 +61,6 @@ nav {
     &.clicked {
       top: 24%;
       left: 13%;
-      width: 60%;
       rotate: 4deg;
       opacity: 1;
     }
@@ -71,6 +71,12 @@ nav {
   max-width: var(--max-width-l);
   margin-inline: auto;
   padding: calc(var(--drem) * 3);
+  padding-bottom: 8vmin;
+  h2 {
+    margin-inline: auto;
+    margin-bottom: calc(var(--drem) * 4);
+    max-width: 600px;
+  }
 }
 
 #contact {

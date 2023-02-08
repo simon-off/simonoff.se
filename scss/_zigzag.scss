@@ -1,6 +1,5 @@
 .banner {
   user-select: none;
-  text-shadow: 0 0 3em rgb(0, 0, 0);
   font-family: "Poppins", sans-serif;
   font-style: italic;
   font-weight: 900;
@@ -8,13 +7,9 @@
   width: fit-content;
 
   &:hover span {
-    color: var(--color-bg);
     transition-delay: 50ms;
     transition: transform 350ms cubic-bezier(0.075, 0.82, 0.15, 1.5),
       color 700ms cubic-bezier(0, 1, 0, 1);
-  }
-  &:hover .off {
-    color: var(--color-text);
   }
   span {
     pointer-events: none;
@@ -39,16 +34,6 @@
     }
     .off {
       color: var(--color-text);
-    }
-    &:hover {
-      .on {
-        color: var(--color-text);
-      }
-    }
-    &:hover {
-      .off {
-        color: var(--color-bg);
-      }
     }
   }
 }
