@@ -1,15 +1,15 @@
 import fs from "fs";
 
 const repoNames = [
+  "snek",
+  "another-movie-database",
+  "auto-slicer",
   "electricity-calculator",
   "analog-clock",
   "frutti-di-mare",
-  "snek",
-  "another-movie-database",
   "react-todo",
-  "bpm-tap",
-  "auto-slicer",
   "tiny-bookstore",
+  "bpm-tap",
 ];
 
 function filterData(data) {

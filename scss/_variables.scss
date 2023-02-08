@@ -1,12 +1,17 @@
 :root {
   // Sizes
-  --max-width-l: 1400px;
+  --max-width-l: 1500px;
   --max-width-m: 1200px;
   --max-width-s: 1000px;
   --drem: 1rem;
   --inline-spacing: calc(var(--drem) * 3);
-  @media screen and (max-width: 800px) {
+  --border-radius: 6px;
+
+  @media screen and (max-width: 900px) {
     --drem: 0.75rem;
+  }
+  @media screen and (max-width: 700px) {
+    --drem: 0.625rem;
   }
   @media screen and (max-width: 500px) {
     --drem: 0.5rem;
@@ -15,5 +20,6 @@
   --color-text: hsl(0, 0%, 95%);
   --color-bg: hsl(0, 0%, 5%);
   --color-border-subtle: hsl(0, 0%, 20%);
+  --color-light-grey: #999;
   --color-grey: grey;
 }

@@ -70,11 +70,12 @@ nav {
 #projects {
   max-width: var(--max-width-l);
   margin-inline: auto;
-  padding: calc(var(--drem) * 3);
+  padding-inline: calc(var(--drem) * 2);
   padding-bottom: 8vmin;
   h2 {
     margin-inline: auto;
-    margin-bottom: calc(var(--drem) * 4);
+    margin-bottom: min(calc(var(--drem) * 4), 8vmin);
+    // margin-bottom: 8vmin;
     max-width: 600px;
   }
 }
@@ -82,5 +83,5 @@ nav {
 #contact {
   max-width: var(--max-width-m);
   margin-inline: auto;
-  padding: calc(var(--drem) * 3);
+  padding-inline: calc(var(--drem) * 2);
 }
