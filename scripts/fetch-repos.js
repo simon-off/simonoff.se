@@ -31,6 +31,7 @@ for (const name of repoNames) {
   const response = await fetch(`https://api.github.com/repos/simon-off/${name}`);
   const data = await response.json();
   filteredRepos.push(filterData(data));
+  console.log("added: " + data.name);
 }
 
 const json = JSON.stringify(filteredRepos);

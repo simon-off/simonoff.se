@@ -1,1 +1,92 @@
-[{}, {}, {}, {}, {}, {}, {}, {}, {}]
+[
+  {
+    "name": "electricity-calculator",
+    "description": "Electricity Calculator app made with Blazor & Pico.css",
+    "repoUrl": "https://github.com/simon-off/electricity-calculator",
+    "demoUrl": "https://electricitycalculator.netlify.app/",
+    "topics": [],
+    "createdAt": "2023-01-18T15:01:56Z",
+    "updatedAt": "2023-02-02T08:23:44Z",
+    "pushedAt": "2023-02-02T10:23:36Z"
+  },
+  {
+    "name": "analog-clock",
+    "description": "Analog clock made with HTML, CSS & JavaScript",
+    "repoUrl": "https://github.com/simon-off/analog-clock",
+    "demoUrl": "https://analogclock2000.netlify.app/",
+    "topics": ["css", "html", "javascript"],
+    "createdAt": "2022-10-12T20:31:37Z",
+    "updatedAt": "2023-02-08T15:40:14Z",
+    "pushedAt": "2023-02-02T09:59:47Z"
+  },
+  {
+    "name": "frutti-di-mare",
+    "description": "Fish info app made with vanilla JavaScript",
+    "repoUrl": "https://github.com/simon-off/frutti-di-mare",
+    "demoUrl": "https://fruttidimare.netlify.app/",
+    "topics": [],
+    "createdAt": "2022-11-01T15:28:35Z",
+    "updatedAt": "2023-02-02T08:40:48Z",
+    "pushedAt": "2023-02-02T09:30:34Z"
+  },
+  {
+    "name": "snek",
+    "description": "Snake game made with HTML, CSS & JavaScript",
+    "repoUrl": "https://github.com/simon-off/snek",
+    "demoUrl": "https://snek2000.netlify.app/",
+    "topics": ["game", "javascript"],
+    "createdAt": "2022-10-23T23:02:59Z",
+    "updatedAt": "2023-02-02T09:29:24Z",
+    "pushedAt": "2023-02-02T09:20:01Z"
+  },
+  {
+    "name": "another-movie-database",
+    "description": "Movie database app made with React.js",
+    "repoUrl": "https://github.com/simon-off/another-movie-database",
+    "demoUrl": "https://anothermoviedatabase.netlify.app/",
+    "topics": [],
+    "createdAt": "2022-12-02T17:43:14Z",
+    "updatedAt": "2023-02-02T08:23:10Z",
+    "pushedAt": "2023-02-02T08:39:59Z"
+  },
+  {
+    "name": "react-todo",
+    "description": "Simple todo app made with react.js",
+    "repoUrl": "https://github.com/simon-off/react-todo",
+    "demoUrl": "",
+    "topics": [],
+    "createdAt": "2022-11-20T21:38:34Z",
+    "updatedAt": "2022-11-20T21:41:56Z",
+    "pushedAt": "2022-11-20T21:40:45Z"
+  },
+  {
+    "name": "bpm-tap",
+    "description": "JavaScript tap tempo site",
+    "repoUrl": "https://github.com/simon-off/bpm-tap",
+    "demoUrl": "",
+    "topics": [],
+    "createdAt": "2022-09-15T14:05:12Z",
+    "updatedAt": "2022-11-11T10:45:53Z",
+    "pushedAt": "2022-10-18T10:20:32Z"
+  },
+  {
+    "name": "auto-slicer",
+    "description": "Auto Slicer is a Python GUI application designed to split up long audio files into smaller slices",
+    "repoUrl": "https://github.com/simon-off/auto-slicer",
+    "demoUrl": "",
+    "topics": [],
+    "createdAt": "2022-09-15T13:04:32Z",
+    "updatedAt": "2022-11-11T10:46:27Z",
+    "pushedAt": "2022-09-15T13:17:08Z"
+  },
+  {
+    "name": "tiny-bookstore",
+    "description": "Simple fullstack web app where you can find/remove/add books to a fictitious bookstore",
+    "repoUrl": "https://github.com/simon-off/tiny-bookstore",
+    "demoUrl": "",
+    "topics": ["apollo", "graphql", "react", "typescript"],
+    "createdAt": "2022-12-08T15:00:00Z",
+    "updatedAt": "2023-02-08T15:39:38Z",
+    "pushedAt": "2022-12-20T11:32:11Z"
+  }
+]
