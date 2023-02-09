@@ -1,14 +1,15 @@
 .repos {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(7, 1fr);
   gap: var(--drem);
 
   @media screen and (min-width: 500px) {
-    grid-template-rows: repeat(5, 1fr);
+    display: grid;
+    grid-template-rows: auto auto auto 1fr 1fr;
     grid-template-columns: repeat(5, 1fr);
   }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 800px) {
+    // grid-template-columns: 1fr 1fr repeat(3, auto) 1fr 1fr;
     grid-template-columns: repeat(7, 1fr);
   }
   @media screen and (min-width: 1200px) {
@@ -20,7 +21,7 @@
   background-color: rgb(18, 18, 18);
   border: 1px solid var(--color-border-subtle);
   padding: var(--drem);
-  min-height: clamp(8rem, 10vw, 10rem);
+  // min-height: clamp(8rem, 10vw, 10rem);
   border-radius: var(--border-radius);
 
   display: flex;
@@ -28,16 +29,27 @@
   justify-content: space-between;
   gap: var(--drem);
 
-  div:nth-child(2) {
+  @media (prefers-reduced-motion: no-preference) {
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;
+  }
+
+  // .text {
+  // }
+
+  .buttons {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    gap: var(--drem);
+    gap: calc(var(--drem) * 0.5 + 0.25rem);
+    // gap: var(--drem);
   }
 
   h3 {
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    // line-height: 1;
+    // padding-bottom: 0.5em;
   }
 
   p {
@@ -63,27 +75,27 @@
   &:nth-child(1) {
     grid-area: 1 / 1 / 2 / 3;
   }
-  // &:nth-child(2) {
-  //   grid-area: 2 / 1 / 4 / 2;
-  // }
-  // &:nth-child(3) {
-  //   grid-area: 2 / 2 / 4 / 3;
-  // }
+  &:nth-child(2) {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+  &:nth-child(3) {
+    grid-area: 3 / 1 / 4 / 3;
+  }
   &:nth-child(4) {
-    grid-area: 2 / 1 / 4 / 2;
+    grid-area: 4 / 2 / 6 / 3;
   }
   &:nth-child(5) {
-    grid-area: 4 / 1 / 5 / 3;
+    grid-area: 6 / 1 / 8 / 2;
   }
-  &:nth-child(6) {
-    grid-area: 5 / 1 / 6 / 3;
-  }
+  // &:nth-child(6) {
+  //   grid-area: 5 / 1 / 6 / 3;
+  // }
   // &:nth-child(7) {
   //   grid-area: 4 / 4 / 5 / 6;
   // }
-  &:nth-child(8) {
-    grid-area: 6 / 2 / 8 / 3;
-  }
+  // &:nth-child(8) {
+  //   grid-area: 6 / 2 / 8 / 3;
+  // }
   // &:nth-child(9) {
   //   grid-area: 5 / 1 / 6 / 3;
   // }
@@ -96,10 +108,10 @@
       grid-area: 1 / 4 / 2 / 6;
     }
     &:nth-child(3) {
-      grid-area: 2 / 3 / 3 / 6;
+      grid-area: 2 / 1 / 4 / 3;
     }
     &:nth-child(4) {
-      grid-area: 2 / 1 / 4 / 3;
+      grid-area: 2 / 3 / 3 / 6;
     }
     &:nth-child(5) {
       grid-area: 3 / 3 / 4 / 6;
@@ -107,40 +119,40 @@
     &:nth-child(6) {
       grid-area: 4 / 1 / 5 / 4;
     }
-    &:nth-child(7) {
-      grid-area: 4 / 4 / 5 / 6;
-    }
     &:nth-child(8) {
-      grid-area: 5 / 3 / 6 / 6;
+      grid-area: 4 / 4 / 5 / 6;
     }
     &:nth-child(9) {
       grid-area: 5 / 1 / 6 / 3;
     }
+    &:nth-child(7) {
+      grid-area: 5 / 3 / 6 / 6;
+    }
   }
 
-  @media screen and (min-width: 700px) {
-    &:nth-child(1) {
+  @media screen and (min-width: 800px) {
+    &:nth-child(2) {
       grid-area: 1 / 1 / 2 / 4;
     }
-    &:nth-child(2) {
+    &:nth-child(3) {
       grid-area: 1 / 4 / 2 / 8;
     }
-    &:nth-child(3) {
-      grid-area: 2 / 1 / 3 / 3;
-    }
     &:nth-child(4) {
+      grid-area: 2 / 1 / 4 / 3;
+    }
+    &:nth-child(1) {
       grid-area: 2 / 3 / 4 / 6;
     }
     &:nth-child(5) {
       grid-area: 2 / 6 / 3 / 8;
     }
     &:nth-child(6) {
-      grid-area: 3 / 1 / 5 / 3;
-    }
-    &:nth-child(7) {
       grid-area: 3 / 6 / 4 / 8;
     }
     &:nth-child(8) {
+      grid-area: 4 / 1 / 5 / 3;
+    }
+    &:nth-child(7) {
       grid-area: 4 / 3 / 6 / 5;
     }
     &:nth-child(9) {
@@ -149,16 +161,16 @@
   }
 
   @media screen and (min-width: 1200px) {
-    &:nth-child(1) {
+    &:nth-child(2) {
       grid-area: 1 / 2 / 2 / 5;
     }
-    &:nth-child(2) {
+    &:nth-child(3) {
       grid-area: 1 / 5 / 2 / 9;
     }
-    &:nth-child(3) {
+    &:nth-child(4) {
       grid-area: 2 / 1 / 3 / 4;
     }
-    &:nth-child(4) {
+    &:nth-child(1) {
       grid-area: 2 / 4 / 4 / 7;
     }
     &:nth-child(5) {
@@ -167,10 +179,10 @@
     &:nth-child(6) {
       grid-area: 3 / 2 / 5 / 4;
     }
-    &:nth-child(7) {
+    &:nth-child(8) {
       grid-area: 3 / 7 / 4 / 9;
     }
-    &:nth-child(8) {
+    &:nth-child(7) {
       grid-area: 4 / 4 / 6 / 6;
     }
     &:nth-child(9) {

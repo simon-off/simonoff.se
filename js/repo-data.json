@@ -1,7 +1,7 @@
 [
   {
     "name": "snek",
-    "description": "Snake game made with HTML, CSS & JavaScript",
+    "description": "Snake game made with HTML, CSS & JavaScript. testing to seee stuff here",
     "repoUrl": "https://github.com/simon-off/snek",
     "demoUrl": "https://snek2000.netlify.app/",
     "topics": ["game", "javascript"],

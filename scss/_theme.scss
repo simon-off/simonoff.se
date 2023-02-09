@@ -3,9 +3,12 @@
 }
 
 html {
-  scroll-behavior: smooth;
   scrollbar-color: #333 #000;
   scrollbar-width: thin;
+
+  &:focus-within {
+    scroll-behavior: smooth;
+  }
 }
 
 body {

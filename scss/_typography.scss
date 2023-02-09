@@ -6,6 +6,16 @@ p {
   font-weight: 300;
 }
 
+// @media screen and (max-width: 500px) {
+//   p {
+//     font-size: 0.875rem;
+//   }
+// }
+
+.mono {
+  font-family: "JetBrains Mono";
+}
+
 .terminal {
   font-family: "JetBrains Mono";
   background-color: black;
@@ -16,11 +26,12 @@ p {
 
   &::before {
     content: "> ";
+    font-weight: 500;
     color: var(--color-grey);
   }
   &::after {
     content: "_";
-    // font-weight: 800;
+    font-weight: 500;
     transform: translateY(-0.1em);
     padding-left: 0.1em;
     position: absolute;

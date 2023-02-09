@@ -36,7 +36,7 @@ for (const name of repoNames) {
 
 const json = JSON.stringify(filteredRepos);
 
-fs.writeFile("./js/repo-data.json", json, (err) => {
+fs.writeFile("./scripts/repo-data.json", json, (err) => {
   if (err) throw err;
   console.log("Saved data successfully!");
 });

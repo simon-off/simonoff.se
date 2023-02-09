@@ -4,7 +4,9 @@
   --max-width-m: 1200px;
   --max-width-s: 1000px;
   --drem: 1rem;
-  --inline-spacing: calc(var(--drem) * 3);
+  --spacing-inline: calc(var(--drem) * 2);
+  --spacing-block: calc(var(--drem) * 3);
+  --spacing-section: 8vmin;
   --border-radius: 6px;
 
   @media screen and (max-width: 900px) {
