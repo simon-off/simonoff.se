@@ -109,9 +109,12 @@ nav {
   right: -1em;
   bottom: 2em;
   border-radius: 2em 0 0 2em;
-  font-size: calc(var(--drem) * 0.5 + 0.75rem);
   padding: 0.5em 2em 0.5em 1em;
   transform: translateX(calc(100% - 3.5em));
+
+  font-size: calc(var(--drem) * 0.5 + 0.75rem);
+  font-weight: 300;
+  letter-spacing: 0.25em;
 
   display: flex;
   justify-content: flex-end;

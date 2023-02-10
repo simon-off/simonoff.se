@@ -9,11 +9,16 @@ function convertRepoName(input) {
     .join(" ");
 }
 
+// If the entirety of reposContainer fits on screen:
+const mediaQuery = window.matchMedia(`(min-height: ${1000}px)`);
+
 let index = 0;
 for (const repo of repos) {
   const articleEl = document.createElement("article");
-  articleEl.classList.add("repo");
-  articleEl.style.animationDelay = `${index * 200}ms`;
+  articleEl.classList.add("repo", "observe");
+  if (mediaQuery.matches) {
+    articleEl.style.animationDelay = `${index * 150}ms`;
+  }
   articleEl.innerHTML = `
   <div class="text">
     <h3>${convertRepoName(repo.name) ?? ""}</h3>

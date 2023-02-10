@@ -35,7 +35,10 @@ p {
     transform: translateY(-0.1em);
     padding-left: 0.1em;
     position: absolute;
-    animation: blink 1s linear infinite;
     color: var(--color-grey);
+  }
+
+  &.full::after {
+    animation: blink 1s linear infinite;
   }
 }

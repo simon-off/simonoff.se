@@ -9,7 +9,6 @@
     grid-template-columns: repeat(5, 1fr);
   }
   @media screen and (min-width: 800px) {
-    // grid-template-columns: 1fr 1fr repeat(3, auto) 1fr 1fr;
     grid-template-columns: repeat(7, 1fr);
   }
   @media screen and (min-width: 1200px) {
@@ -21,7 +20,6 @@
   background-color: rgb(18, 18, 18);
   border: 1px solid var(--color-border-subtle);
   padding: var(--drem);
-  // min-height: clamp(8rem, 10vw, 10rem);
   border-radius: var(--border-radius);
 
   display: flex;
@@ -31,18 +29,16 @@
 
   @media (prefers-reduced-motion: no-preference) {
     opacity: 0;
-    animation: fade-in 1s ease-in-out forwards;
+    &.viewed {
+      animation: fade-in 1s ease-in-out forwards;
+    }
   }
-
-  // .text {
-  // }
 
   .buttons {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     gap: calc(var(--drem) * 0.5 + 0.25rem);
-    // gap: var(--drem);
   }
 
   h3 {
