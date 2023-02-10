@@ -38,7 +38,9 @@ p {
     color: var(--color-grey);
   }
 
-  &.full::after {
-    animation: blink 1s linear infinite;
+  @media (prefers-reduced-motion: no-preference) {
+    &.full::after {
+      animation: blink 1s linear infinite;
+    }
   }
 }

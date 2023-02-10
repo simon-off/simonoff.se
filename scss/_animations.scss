@@ -45,7 +45,16 @@
   }
 }
 
-@keyframes drop-in {
+@keyframes fade-in-half {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes slide-in-top {
   0% {
     translate: 0 -8em;
     opacity: 0;
@@ -53,5 +62,27 @@
   100% {
     opacity: 1;
     translate: 0 0;
+  }
+}
+
+@keyframes subtle-scale {
+  0% {
+    scale: 0.975;
+    opacity: 0;
+  }
+  100% {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+@keyframes heavy-scale {
+  0% {
+    scale: 0.5;
+    opacity: 0;
+  }
+  100% {
+    scale: 1;
+    opacity: 1;
   }
 }

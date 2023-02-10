@@ -42,7 +42,7 @@ const typewriterObserver = new IntersectionObserver(
           } else {
             el.classList.add("full");
           }
-        }, Math.floor(Math.random() * 100) + 150);
+        }, Math.floor(Math.random() * 100) + 100);
         clearInterval(deleteIntervalIDs[el.dataset.text]);
       } else {
         deleteIntervalIDs[el.dataset.text] = setInterval(() => {
@@ -63,3 +63,26 @@ for (let element of typewriterElements) {
   element.textContent = "";
   typewriterObserver.observe(element);
 }
+
+//===========================================================//
+//+++ to-top button +++||------------------------------------//
+//===========================================================//
+
+const toTopButton = document.querySelector("#to-top");
+const transitionDefault = getComputedStyle(toTopButton).getPropertyValue("--transition-default");
+toTopButton.style.setProperty("--transition-duration", transitionDefault);
+
+const topObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        toTopButton.classList.remove("show");
+      } else {
+        toTopButton.classList.add("show");
+      }
+    });
+  },
+  { rootMargin: "-8px" }
+);
+
+topObserver.observe(document.querySelector("header"));

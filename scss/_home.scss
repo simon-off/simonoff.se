@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  // gap: var(--spacing-block);
   padding-bottom: var(--spacing-section);
   padding-top: 1rem;
 }
@@ -25,15 +24,17 @@ nav {
   a {
     padding: var(--drem);
   }
-  div {
-    width: 0.25em;
-    height: 0.25em;
-    margin-right: 3px;
-    background-color: var(--color-text);
-    opacity: 0.75;
-    rotate: 45deg;
-    @media (prefers-reduced-motion: no-preference) {
-      opacity: 0;
+}
+
+.diamond {
+  width: 0.25em;
+  height: 0.25em;
+  margin-right: 3px;
+  background-color: var(--color-light-grey);
+  rotate: 45deg;
+  @media (prefers-reduced-motion: no-preference) {
+    opacity: 0;
+    &.viewed {
       animation: fade-in 1s cubic-bezier(0.55, 0.28, 0.1, 1.14) forwards;
     }
   }
@@ -46,13 +47,23 @@ nav {
   }
 
   .navlink.viewed span {
-    animation: drop-in 750ms cubic-bezier(0.55, 0.28, 0.1, 1.14) forwards;
+    animation: slide-in-top 750ms cubic-bezier(0.55, 0.28, 0.1, 1.14) forwards;
+  }
+}
+
+.terminal {
+  @media (prefers-reduced-motion: no-preference) {
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+    &.viewing {
+      opacity: 1;
+    }
   }
 }
 
 #about {
   display: flex;
-  row-gap: 1.5rem;
+  row-gap: var(--spacing-block);
   align-items: center;
   @media screen and (max-width: 700px) {
     flex-flow: column-reverse;
@@ -63,10 +74,22 @@ nav {
   padding-top: var(--spacing-block);
   p {
     padding-top: 1em;
+    @media (prefers-reduced-motion: no-preference) {
+      opacity: 0;
+      &.viewed {
+        animation: fade-in 2s cubic-bezier(0.38, 0.11, 0.38, 0.96) forwards;
+      }
+    }
   }
   .image-wrapper {
     flex-shrink: 0;
     position: relative;
+    @media (prefers-reduced-motion: no-preference) {
+      opacity: 0;
+      &.viewed {
+        animation: subtle-scale 2s cubic-bezier(0.38, 0.11, 0.38, 1) forwards;
+      }
+    }
   }
   img {
     object-fit: contain;
@@ -114,46 +137,61 @@ nav {
   max-width: var(--max-width-m);
   margin-inline: auto;
 
-  padding-bottom: var(--spacing-section);
+  // padding-bottom: var(--spacing-section);
   padding-inline: var(--spacing-inline);
   padding-top: var(--spacing-block);
-}
-
-#to-top {
-  position: fixed;
-  right: -1em;
-  bottom: 2em;
-  border-radius: 2em 0 0 2em;
-  padding: 0.5em 2em 0.5em 1em;
-  transform: translateX(calc(100% - 3.5em));
-
-  font-size: calc(var(--drem) * 0.5 + 0.75rem);
-  font-weight: 300;
-  letter-spacing: 0.25em;
 
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.contact-wrapper {
+  display: flex;
+  row-gap: var(--spacing-block);
   align-items: center;
-
-  background-color: rgba(0 0 0 / 0.5);
-  border: 1px solid var(--color-border-subtle);
-  border-right: none;
-  text-decoration: none;
-
-  transition: 350ms cubic-bezier(0.075, 0.82, 0.15, 1.2);
-  transition-property: opacity transform;
-  transition-delay: 100ms;
-  opacity: 0.5;
-
-  span {
-    padding-left: 1em;
+  @media screen and (max-width: 700px) {
+    flex-flow: column-reverse;
   }
+  img {
+    @media screen and (min-height: 1200px) {
+      padding-top: 2rem;
+    }
+    flex-shrink: 0;
+    object-fit: contain;
+    image-rendering: optimizeQuality;
+    user-select: none;
+    height: 100%;
+    @media (prefers-reduced-motion: no-preference) {
+      opacity: 0;
+      &.viewed {
+        animation: subtle-scale 2s cubic-bezier(0.38, 0.11, 0.38, 1) forwards;
+      }
+    }
+  }
+  .contact-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  h2 {
+    flex-grow: 1;
+  }
+}
 
-  @media (hover: hover) and (pointer: fine) {
-    &:hover {
-      opacity: 1;
-      transition-delay: 0ms;
-      transform: translateX(0);
+.footnote {
+  margin-top: auto;
+  padding-block: var(--spacing-block);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  font-size: min(1rem, 4.25vw);
+  @media (prefers-reduced-motion: no-preference) {
+    opacity: 0;
+
+    &.viewed {
+      animation: heavy-scale 1.5s cubic-bezier(0.55, 0.5, 0.1, 1) forwards;
     }
   }
 }

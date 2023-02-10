@@ -14,34 +14,34 @@
       <header>
         <nav>
           <a href="#about" data-delay="500" class="zigzag navlink observe">about</a>
-          <div style="animation-delay: 1s"></div>
+          <div style="animation-delay: 1s" class="diamond observe"></div>
           <a href="#projects" data-delay="0" class="zigzag navlink observe">projects</a>
-          <div style="animation-delay: 1.2s"></div>
+          <div style="animation-delay: 1.2s" class="diamond observe"></div>
           <a href="#contact" data-delay="1000" class="zigzag navlink observe">contact</a>
         </nav>
         <h1 class="zigzag banner">SIMONOFF</h1>
       </header>
       <section id="about">
         <div>
-          <h2 class="terminal typewriter" data-text="whoami">whoami</h2>
-          <p>
+          <h2 class="terminal typewriter observe" data-text="whoami">whoami</h2>
+          <p class="observe" style="animation-delay: 400ms">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam neque perspiciatis quasi
             cupiditate numquam sed ullam corrupti quas, quae eos sapiente pariatur distinctio
             dolores iste, deleniti quaerat reprehenderit. Facilis non reprehenderit amet voluptas.
           </p>
-          <p>
+          <p class="observe" style="animation-delay: 800ms">
             odit aliquam sit laboriosam ducimus consequatur rem labore quia inventore quam officiis
             eveniet et, ipsam illo!
           </p>
         </div>
-        <div class="image-wrapper">
+        <div class="image-wrapper observe">
           <img src="/images/face.png" alt="simon smiling" />
           <img class="glasses" src="/images/glasses.png" alt="sunglasses" />
         </div>
       </section>
     </div>
     <section id="projects" class="observe">
-      <h2 class="terminal typewriter" data-text="ls repos">ls repos</h2>
+      <h2 class="terminal typewriter observe" data-text="ls repos">ls repos</h2>
       <div class="repos">
         <!-- <article class="repo" data-repo-name="electricity-calculator">
           <h3>Electricity Calculator</h3>
@@ -58,8 +58,25 @@
       </div>
     </section>
     <section id="contact">
-      <h2 class="terminal typewriter" data-text="echo contact">echo contact</h2>
+      <div class="contact-wrapper">
+        <img class="observe" src="/images/walking.png" alt="simon walking" />
+
+        <div class="contact-info">
+          <h2 class="terminal typewriter observe" data-text="echo contact">echo contact</h2>
+          <p>
+            Whether you have an exciting business opportunity coming up or you just wanna chat about
+            the latest and greatest JavaScript framework, please don't hesitate to hit me up!
+          </p>
+          <p>I'm always down to connect.</p>
+          <a href="mailto:hi@simonoff.se">hi@simonoff.se</a>
+        </div>
+      </div>
+      <div class="footnote observe">
+        <div style="animation-delay: 1s" class="diamond observe"></div>
+        <p>Made with love by Simon Bäckström</p>
+        <div style="animation-delay: 1s" class="diamond observe"></div>
+      </div>
     </section>
-    <a id="to-top" href="#intro">⬆<span>TOP</span></a>
+    <a id="to-top" href="#intro">▲<span>TOP</span></a>
   </body>
 </html>
