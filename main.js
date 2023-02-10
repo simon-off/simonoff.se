@@ -8,3 +8,4 @@ import "./scss/main.scss";
 import "./js/zigzag";
 import "./js/onload";
 import "./js/repos";
+import "./js/scroll";

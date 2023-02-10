@@ -2,7 +2,12 @@ import repos from "./repo-data";
 
 const reposContainer = document.querySelector(".repos");
 
-console.log(repos);
+function convertRepoName(input) {
+  return input
+    .split("-")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+}
 
 let index = 0;
 for (const repo of repos) {
@@ -11,7 +16,7 @@ for (const repo of repos) {
   articleEl.style.animationDelay = `${index * 200}ms`;
   articleEl.innerHTML = `
   <div class="text">
-    <h3>${index + 1} ${repo.name ?? ""}</h3>
+    <h3>${convertRepoName(repo.name) ?? ""}</h3>
     <p>${repo.description ?? ""}</p>
   </div>
   <div class="buttons">
