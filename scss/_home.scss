@@ -32,6 +32,21 @@ nav {
     background-color: var(--color-text);
     opacity: 0.75;
     rotate: 45deg;
+    @media (prefers-reduced-motion: no-preference) {
+      opacity: 0;
+      animation: fade-in 1s cubic-bezier(0.55, 0.28, 0.1, 1.14) forwards;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .navlink span {
+    opacity: 0;
+    translate: 0 -4em;
+  }
+
+  .navlink.viewed span {
+    animation: drop-in 750ms cubic-bezier(0.55, 0.28, 0.1, 1.14) forwards;
   }
 }
 

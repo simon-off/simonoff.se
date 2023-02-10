@@ -51,6 +51,19 @@ for (const el of navlinks) {
   el.innerHTML = spanString(el.innerText);
   el.addEventListener("mouseover", () => translateChildrenZigZag(el, 0.2));
   el.addEventListener("mouseout", () => translateChildrenZigZag(el, 0));
+
+  const delayTime = 250;
+  const delayMultiplier = delayTime / ((2 * Math.floor(el.children.length)) / 2);
+  for (let i = el.children.length - 1; i >= 0; i--) {
+    const randomness = getRandomValue(delayTime);
+
+    el.children[i].style.animationDelay = `${
+      Math.abs((i - el.children.length / 2) * delayMultiplier + delayMultiplier / 2) +
+      delayMultiplier / 2 +
+      randomness +
+      Number(el.dataset.delay)
+    }ms`;
+  }
 }
 
 banner.innerHTML = spanString(banner.innerText);
