@@ -69,8 +69,8 @@ for (let element of typewriterElements) {
 //===========================================================//
 
 const toTopButton = document.querySelector("#to-top");
-const transitionDefault = getComputedStyle(toTopButton).getPropertyValue("--transition-default");
-toTopButton.style.setProperty("--transition-duration", transitionDefault);
+toTopButton.style.setProperty("--transition-time", "500ms");
+toTopButton.style.setProperty("--transition-delay", "150ms");
 
 const topObserver = new IntersectionObserver(
   (entries) => {

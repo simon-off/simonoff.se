@@ -1,10 +1,14 @@
 #to-top {
+  // set with JS
+  --transition-time: 0;
+  --transition-delay: 0;
+
   position: fixed;
   right: -1em;
   bottom: 2em;
   border-radius: 2em 0 0 2em;
   padding: 0.5em 2em 0.5em 1em;
-  transform: translateX(calc(100% - 3.5em));
+  transform: translateX(calc(100%));
 
   font-size: calc(var(--drem) * 0.5 + 0.75rem);
   font-weight: 300;
@@ -19,12 +23,16 @@
   border-right: none;
   text-decoration: none;
 
-  transition: transform 350ms cubic-bezier(0.075, 0.82, 0.15, 1.2),
-    opacity 1s cubic-bezier(0.42, 0.31, 0.13, 0.96);
+  transition: transform var(--transition-time) cubic-bezier(0.4, 0.02, 0.9, 0.59),
+    opacity var(--transition-time) cubic-bezier(0.42, 0.31, 0.13, 0.96);
   opacity: 0;
 
   &.show {
     opacity: 0.5;
+    transform: translateX(calc(100% - 3.5em));
+    transition: transform var(--transition-time) cubic-bezier(0.075, 0.82, 0.15, 1.2),
+      opacity var(--transition-time) cubic-bezier(0.42, 0.31, 0.13, 0.96);
+    transition-delay: var(--transition-delay);
   }
 
   span {

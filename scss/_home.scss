@@ -194,4 +194,31 @@ nav {
       animation: heavy-scale 1.5s cubic-bezier(0.55, 0.5, 0.1, 1) forwards;
     }
   }
+
+  a {
+    text-decoration: none;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -0.5em;
+      left: 0;
+      transform: scaleX(0);
+      height: 0.1em;
+      width: 100%;
+      border-radius: 1rem;
+      background-color: var(--color-light-grey);
+
+      @media (prefers-reduced-motion: no-preference) {
+        opacity: 0;
+        transition: 500ms cubic-bezier(0.075, 0.82, 0.165, 1) 100ms;
+      }
+    }
+    &:hover::after {
+      opacity: 1;
+      transform: scaleX(1);
+      transition-delay: 0ms;
+    }
+  }
 }
