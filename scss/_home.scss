@@ -139,7 +139,7 @@ nav {
 
   // padding-bottom: var(--spacing-section);
   padding-inline: var(--spacing-inline);
-  padding-top: var(--spacing-block);
+  padding-block: var(--spacing-block);
 
   display: flex;
   flex-direction: column;
@@ -174,6 +174,15 @@ nav {
     flex-direction: column;
     gap: 1em;
   }
+  p {
+    @media (prefers-reduced-motion: no-preference) {
+      opacity: 0;
+      &.viewed {
+        animation: fade-in 2s cubic-bezier(0.38, 0.11, 0.38, 0.96) forwards;
+      }
+    }
+  }
+
   h2 {
     flex-grow: 1;
   }
@@ -181,7 +190,7 @@ nav {
 
 .footnote {
   margin-top: auto;
-  padding-block: var(--spacing-block);
+  padding-top: var(--spacing-block);
   display: flex;
   align-items: center;
   justify-content: center;

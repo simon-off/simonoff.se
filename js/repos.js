@@ -23,6 +23,7 @@ for (const repo of repos) {
   <div class="text">
     <h3>${convertRepoName(repo.name) ?? ""}</h3>
     <p>${repo.description ?? ""}</p>
+    <ul>${repo.topics.map((tag) => `<li>${tag}</li>`).join(" ")}</ul>
   </div>
   <div class="buttons">
     ${repo.demoUrl && `<a target="_blank" href="${repo.demoUrl}">demo</a>`}

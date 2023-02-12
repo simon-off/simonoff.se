@@ -1,6 +1,10 @@
 import smoothscrollAnchorPolyfill from "smoothscroll-anchor-polyfill";
 smoothscrollAnchorPolyfill;
 
+function getThreshold(el) {
+  getComputedStyle(el).getPropertyValue("--threshold");
+}
+
 //===========================================================//
 //+++ viewing observer +++||---------------------------------//
 //===========================================================//
@@ -15,7 +19,7 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.5 }
+  { threshold: 0.25 }
 );
 
 const observeElements = document.querySelectorAll(".observe");

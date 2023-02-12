@@ -17,15 +17,22 @@
 }
 
 .repo {
-  background-color: rgb(18, 18, 18);
+  background-color: hsl(0, 0%, 8%);
   border: 1px solid var(--color-border-subtle);
+
+  // TODO: Decide on padding!
   padding: var(--drem);
+  // padding: calc((var(--drem) / 2) + (1rem / 2));
+
   border-radius: var(--border-radius);
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  // TODO: Decide on padding!
   gap: var(--drem);
+  // gap: calc((var(--drem) / 2) + (1rem / 2));
 
   @media (prefers-reduced-motion: no-preference) {
     opacity: 0;
@@ -52,9 +59,26 @@
     color: var(--color-light-grey);
   }
 
+  ul {
+    font-size: 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25em;
+    padding: 0;
+    padding-top: var(--drem);
+    list-style: none;
+  }
+
+  li {
+    padding: 0.125em 0.5em;
+    color: var(--color-light-grey);
+    background-color: hsl(0, 0, 14%);
+    border-radius: 0;
+  }
+
   a {
     display: inline-block;
-    background-color: rgb(25, 25, 25);
+    background-color: hsl(0, 0%, 10%);
     border: 1px solid var(--color-border-subtle);
     padding: 0.5em 1em;
     border-radius: var(--border-radius);
