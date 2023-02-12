@@ -74,6 +74,9 @@ banner.addEventListener("click", () => {
   banner.classList.toggle("clicked");
   glasses.classList.toggle("clicked");
 });
+banner.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") banner.click();
+});
 for (let i = banner.children.length - 1; i >= 0; i--) {
   banner.children[i].style.animationDelay = `${i * 100 + 100}ms`;
 }

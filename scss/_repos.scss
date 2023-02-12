@@ -20,19 +20,13 @@
   background-color: hsl(0, 0%, 8%);
   border: 1px solid var(--color-border-subtle);
 
-  // TODO: Decide on padding!
   padding: var(--drem);
-  // padding: calc((var(--drem) / 2) + (1rem / 2));
-
   border-radius: var(--border-radius);
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  // TODO: Decide on padding!
   gap: var(--drem);
-  // gap: calc((var(--drem) / 2) + (1rem / 2));
 
   @media (prefers-reduced-motion: no-preference) {
     opacity: 0;
@@ -51,8 +45,6 @@
   h3 {
     font-weight: 500;
     font-size: 1.25rem;
-    // line-height: 1;
-    // padding-bottom: 0.5em;
   }
 
   p {
@@ -65,7 +57,7 @@
     flex-wrap: wrap;
     gap: 0.25em;
     padding: 0;
-    padding-top: var(--drem);
+    padding-top: calc(var(--drem) * 0.5);
     list-style: none;
   }
 
@@ -73,7 +65,6 @@
     padding: 0.125em 0.5em;
     color: var(--color-light-grey);
     background-color: hsl(0, 0, 14%);
-    border-radius: 0;
   }
 
   a {

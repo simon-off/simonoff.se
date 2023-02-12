@@ -1,14 +1,14 @@
 import fs from "fs";
 
 const repoNames = [
-  "snek",
+  "electricity-calculator",
   "another-movie-database",
   "auto-slicer",
-  "electricity-calculator",
+  "snek",
   "analog-clock",
   "frutti-di-mare",
-  "react-todo",
   "tiny-bookstore",
+  "react-todo",
   "bpm-tap",
 ];
 

@@ -40,7 +40,8 @@
   }
 
   @media (hover: hover) and (pointer: fine) {
-    &:hover {
+    &:hover,
+    &:focus {
       opacity: 1;
       transition-delay: 0ms;
       transform: translateX(0);
