@@ -13,7 +13,18 @@ html {
 }
 
 body {
+  --bg-scale: 16px;
+
   background-color: var(--color-bg);
+  background-image: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0) 49%,
+    rgb(18, 18, 18) 50%,
+    rgba(0 0 0 / 0) 51%
+  );
+  background-size: var(--bg-scale) var(--bg-scale);
+  background-position: center top;
+  // backdrop-filter: blur(4px);
 }
 
 ::selection {
