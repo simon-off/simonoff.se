@@ -1,7 +1,7 @@
 [
   {
     "name": "electricity-calculator",
-    "description": "Blazor webassembly app designed to calculate your total energy use and cost.",
+    "description": "Blazor webassembly app designed to calculate your total energy use and cost over a certain period of time",
     "repoUrl": "https://github.com/simon-off/electricity-calculator",
     "demoUrl": "https://electricitycalculator.netlify.app/",
     "topics": ["blazor", "csharp", "picocss", "webassembly"],
@@ -21,7 +21,7 @@
   },
   {
     "name": "auto-slicer",
-    "description": "Python GUI application designed to split up long audio files into smaller slices",
+    "description": "Python application for splitting up long audio files into smaller slices, with GUI made using the Tkinter framework",
     "repoUrl": "https://github.com/simon-off/auto-slicer",
     "demoUrl": "",
     "topics": ["audio-processing", "python"],
@@ -31,13 +31,53 @@
   },
   {
     "name": "snek",
-    "description": "Classic snake game made with HTML, CSS & JavaScript (and way too many divs)",
+    "description": "Classic snake game (using way too many divs)",
     "repoUrl": "https://github.com/simon-off/snek",
     "demoUrl": "https://snek2000.netlify.app/",
     "topics": ["css", "html", "javascript"],
     "createdAt": "2022-10-23T23:02:59Z",
     "updatedAt": "2023-02-13T20:24:37Z",
     "pushedAt": "2023-02-02T09:20:01Z"
+  },
+  {
+    "name": "bpm-tap",
+    "description": "Tap tempo tool for finding the BPM of a song",
+    "repoUrl": "https://github.com/simon-off/bpm-tap",
+    "demoUrl": "https://bpm-tap.netlify.app/",
+    "topics": ["css", "html", "javascript"],
+    "createdAt": "2022-09-15T14:05:12Z",
+    "updatedAt": "2023-02-13T19:48:33Z",
+    "pushedAt": "2022-10-18T10:20:32Z"
+  },
+  {
+    "name": "frutti-di-mare",
+    "description": "Very strange fish info app made with vanilla JavaScript",
+    "repoUrl": "https://github.com/simon-off/frutti-di-mare",
+    "demoUrl": "https://fruttidimare.netlify.app/",
+    "topics": ["javascript", "scss", "html"],
+    "createdAt": "2022-11-01T15:28:35Z",
+    "updatedAt": "2023-02-13T20:28:47Z",
+    "pushedAt": "2023-02-02T09:30:34Z"
+  },
+  {
+    "name": "tiny-bookstore",
+    "description": "Fullstack web app where you can find/add/remove books to the store",
+    "repoUrl": "https://github.com/simon-off/tiny-bookstore",
+    "demoUrl": "",
+    "topics": ["apollo", "graphql", "react", "typescript"],
+    "createdAt": "2022-12-08T15:00:00Z",
+    "updatedAt": "2023-02-08T15:39:38Z",
+    "pushedAt": "2022-12-20T11:32:11Z"
+  },
+  {
+    "name": "we-hate-music",
+    "description": "Music project site, including a side scrolling spaceship shooter game, strangely enough.",
+    "repoUrl": "",
+    "demoUrl": "/wehatemusic",
+    "topics": ["html", "css", "javascript", "godot"],
+    "createdAt": "2022-11-20T21:38:34Z",
+    "updatedAt": "2023-02-13T20:04:30Z",
+    "pushedAt": "2023-02-13T20:02:38Z"
   },
   {
     "name": "analog-clock",
@@ -48,45 +88,5 @@
     "createdAt": "2022-10-12T20:31:37Z",
     "updatedAt": "2023-02-13T20:26:52Z",
     "pushedAt": "2023-02-02T09:59:47Z"
-  },
-  {
-    "name": "frutti-di-mare",
-    "description": "Very strange fish info app made with vanilla JavaScript. Don't even ask...",
-    "repoUrl": "https://github.com/simon-off/frutti-di-mare",
-    "demoUrl": "https://fruttidimare.netlify.app/",
-    "topics": ["javascript", "scss", "html"],
-    "createdAt": "2022-11-01T15:28:35Z",
-    "updatedAt": "2023-02-13T20:28:47Z",
-    "pushedAt": "2023-02-02T09:30:34Z"
-  },
-  {
-    "name": "tiny-bookstore",
-    "description": "Simple fullstack web app where you can find/remove/add books to a fictitious bookstore",
-    "repoUrl": "https://github.com/simon-off/tiny-bookstore",
-    "demoUrl": "",
-    "topics": ["apollo", "graphql", "react", "typescript"],
-    "createdAt": "2022-12-08T15:00:00Z",
-    "updatedAt": "2023-02-08T15:39:38Z",
-    "pushedAt": "2022-12-20T11:32:11Z"
-  },
-  {
-    "name": "react-todo",
-    "description": "My first dabble with React.js - The obligatory todo app!",
-    "repoUrl": "https://github.com/simon-off/react-todo",
-    "demoUrl": "https://react-todo2000.netlify.app/",
-    "topics": ["react", "scss"],
-    "createdAt": "2022-11-20T21:38:34Z",
-    "updatedAt": "2023-02-13T20:04:30Z",
-    "pushedAt": "2023-02-13T20:02:38Z"
-  },
-  {
-    "name": "bpm-tap",
-    "description": "Minimal tap tempo tool for finding the BPM (beats per minutes) of a song",
-    "repoUrl": "https://github.com/simon-off/bpm-tap",
-    "demoUrl": "https://bpm-tap.netlify.app/",
-    "topics": ["css", "html", "javascript"],
-    "createdAt": "2022-09-15T14:05:12Z",
-    "updatedAt": "2023-02-13T19:48:33Z",
-    "pushedAt": "2022-10-18T10:20:32Z"
   }
 ]

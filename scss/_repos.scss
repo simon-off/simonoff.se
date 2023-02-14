@@ -5,7 +5,6 @@
 
   @media screen and (min-width: 500px) {
     display: grid;
-    // grid-template-rows: auto auto auto auto;
     grid-template-columns: repeat(5, 1fr);
   }
   @media screen and (min-width: 800px) {
@@ -31,6 +30,7 @@
   position: relative;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
   transition: border-color 1s ease-in-out;
+  overflow: hidden;
 
   @media (prefers-reduced-motion: no-preference) {
     opacity: 0;
@@ -39,37 +39,46 @@
     }
   }
 
-  &:hover::before {
-    opacity: 1;
-    transition-duration: 400ms;
+  &::after {
+    content: var(--title);
+    line-height: 1;
+    position: absolute;
+    display: block;
+    top: 0%;
+    left: 0%;
+    width: 200%;
+    height: 200%;
+    font-size: 48px;
+    color: white;
+    opacity: 0.01;
+    filter: blur(0px);
+    z-index: -1;
+    font-family: "Poppins";
+    font-weight: 900;
   }
 
   &::before {
     border-radius: inherit;
     content: "";
     height: 100%;
+    width: 100%;
+    position: absolute;
     inset: 0px;
     opacity: 0;
-    position: absolute;
     transition: opacity 4000ms cubic-bezier(0.075, 0.82, 0.165, 1);
-    width: 100%;
     z-index: -1;
-  }
-
-  &::before {
     background: radial-gradient(
       1200px circle at var(--mouse-x) var(--mouse-y),
-      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.025),
       transparent 50%
     );
   }
 
-  .buttons {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: calc(var(--drem) * 0.5 + 0.25rem);
+  &:hover::before {
+    opacity: 1;
+    transition-duration: 400ms;
   }
+
   h3 {
     font-weight: 500;
     font-size: 1.25rem;
@@ -77,19 +86,30 @@
   p {
     color: var(--color-light-grey);
   }
+  .break {
+    display: block;
+    height: 0.25em;
+  }
   ul {
     font-size: 0.75rem;
     display: flex;
     flex-wrap: wrap;
     gap: 0.25em;
     padding: 0;
-    padding-top: calc(var(--drem) * 0.5);
+    padding-top: calc(var(--drem) * 0.75);
     list-style: none;
   }
   li {
     padding: 0.125em 0.5em;
     color: var(--color-light-grey);
     background-color: hsl(0, 0%, 14%);
+  }
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: calc(var(--drem) * 0.5 + 0.25rem);
+    z-index: 10;
   }
   a {
     display: inline-block;
@@ -105,6 +125,8 @@
     box-shadow: 0 2px 8px 8px rgba(0 0 0 / 0.02), 0 0 4px rgba(0 0 0 / 0.02);
     transition: 2000ms cubic-bezier(0.165, 0.84, 0.44, 1);
     transition-property: box-shadow, border-color, color;
+    // Strange shadow overlap fix
+    margin-top: 1px;
 
     &:hover,
     &:focus-visible {

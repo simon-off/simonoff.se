@@ -16,6 +16,7 @@ let index = 0;
 for (const repo of repos) {
   const articleEl = document.createElement("article");
   articleEl.classList.add("repo", "observe");
+  articleEl.style.setProperty("--title", `"${repo.description.repeat(4)}"`);
   if (mediaQuery.matches) {
     articleEl.style.animationDelay = `${index * 150}ms`;
   }
@@ -25,9 +26,9 @@ for (const repo of repos) {
       <p>${repo.description ?? ""}</p>
       <ul>${repo.topics.map((tag) => `<li>${tag}</li>`).join(" ")}</ul>
     </div>
-    <div class="buttons">
+      <div class="buttons">
       ${repo.demoUrl && `<a target="_blank" href="${repo.demoUrl}">demo</a>`}
-      <a target="_blank" href="https://github.com/simon-off/${repo.name ?? ""}">github</a>
+      ${repo.repoUrl && `<a target="_blank" href="${repo.repoUrl}">github</a>`}
     </div>
   `;
 

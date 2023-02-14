@@ -5,11 +5,11 @@ const repoNames = [
   "another-movie-database",
   "auto-slicer",
   "snek",
-  "analog-clock",
+  "bpm-tap",
   "frutti-di-mare",
   "tiny-bookstore",
   "react-todo",
-  "bpm-tap",
+  "analog-clock",
 ];
 
 function filterData(data) {
