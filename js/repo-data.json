@@ -1,7 +1,7 @@
 [
   {
     "name": "electricity-calculator",
-    "description": "Blazor webassembly app designed to calculate your total energy use and cost",
+    "description": "Blazor webassembly app designed to calculate your total energy use and cost.",
     "repoUrl": "https://github.com/simon-off/electricity-calculator",
     "demoUrl": "https://electricitycalculator.netlify.app/",
     "topics": ["blazor", "csharp", "picocss", "webassembly"],
