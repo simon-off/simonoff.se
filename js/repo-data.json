@@ -61,7 +61,7 @@
   },
   {
     "name": "tiny-bookstore",
-    "description": "Fullstack web app where you can find/add/remove books to the store",
+    "description": "Fullstack web app where you can find/remove/add books to a store",
     "repoUrl": "https://github.com/simon-off/tiny-bookstore",
     "demoUrl": "",
     "topics": ["apollo", "graphql", "react", "typescript"],
@@ -71,7 +71,7 @@
   },
   {
     "name": "we-hate-music",
-    "description": "Music project site, including a side scrolling spaceship shooter game, strangely enough.",
+    "description": "Personal music project site, including a side scrolling spaceship shooter game made in the godot game engine, strangely enough.",
     "repoUrl": "",
     "demoUrl": "/wehatemusic",
     "topics": ["html", "css", "javascript", "godot"],
