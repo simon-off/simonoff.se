@@ -21,6 +21,7 @@ for (const repo of repos) {
     articleEl.style.animationDelay = `${index * 150}ms`;
   }
   articleEl.innerHTML = `
+  <div class="repo-inner">
     <div class="text">
       <h3>${convertRepoName(repo.name) ?? ""}</h3>
       <p>${repo.description ?? ""}</p>
@@ -30,6 +31,7 @@ for (const repo of repos) {
       ${repo.demoUrl && `<a target="_blank" href="${repo.demoUrl}">demo</a>`}
       ${repo.repoUrl && `<a target="_blank" href="${repo.repoUrl}">github</a>`}
     </div>
+  </div>
   `;
 
   reposContainer.append(articleEl);

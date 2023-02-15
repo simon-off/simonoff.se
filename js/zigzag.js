@@ -55,7 +55,7 @@ for (const el of navlinks) {
   const delayTime = 250;
   const delayMultiplier = delayTime / ((2 * Math.floor(el.children.length)) / 2);
   for (let i = el.children.length - 1; i >= 0; i--) {
-    const randomness = getRandomValue(delayTime);
+    const randomness = getRandomValue(delayTime / 2);
 
     el.children[i].style.animationDelay = `${
       Math.abs((i - el.children.length / 2) * delayMultiplier + delayMultiplier / 2) +

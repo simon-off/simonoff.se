@@ -1,4 +1,3 @@
-// import "@fontsource/poppins";
 import "@fontsource/poppins/900-italic.css";
 import "@fontsource/rubik";
 import "@fontsource/rubik/300.css";
@@ -10,3 +9,4 @@ import "./js/onload";
 import "./js/repos";
 import "./js/scroll";
 import "./js/hover";
+import "./js/mail";
