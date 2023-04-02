@@ -10,24 +10,24 @@
     "pushedAt": "2023-02-02T10:23:36Z"
   },
   {
+    "name": "folk-från-skogen",
+    "description": "Official website for a summer music festival taking place in Gullabo Sweden",
+    "repoUrl": "https://github.com/simon-off/folk-fran-skogen",
+    "demoUrl": "https://folkfranskogen.se/",
+    "topics": ["html", "javascript", "scss", "vite"],
+    "createdAt": "2023-03-31T23:17:49Z",
+    "updatedAt": "2023-04-02T19:10:47Z",
+    "pushedAt": "2023-04-02T18:34:33Z"
+  },
+  {
     "name": "another-movie-database",
-    "description": "Movie database app made with React.js & lots of sass, using data from themoviedb.org",
+    "description": "Movie database app made with React.js & lots of sass, using data from themoviedb.org public api",
     "repoUrl": "https://github.com/simon-off/another-movie-database",
     "demoUrl": "https://anothermoviedatabase.netlify.app/",
     "topics": ["react", "scss"],
     "createdAt": "2022-12-02T17:43:14Z",
     "updatedAt": "2023-02-13T20:15:25Z",
     "pushedAt": "2023-02-02T08:39:59Z"
-  },
-  {
-    "name": "auto-slicer",
-    "description": "Python application for splitting up long audio files into smaller slices, with GUI made using the Tkinter framework",
-    "repoUrl": "https://github.com/simon-off/auto-slicer",
-    "demoUrl": "",
-    "topics": ["audio-processing", "python"],
-    "createdAt": "2022-09-15T13:04:32Z",
-    "updatedAt": "2023-02-13T20:22:04Z",
-    "pushedAt": "2022-09-15T13:17:08Z"
   },
   {
     "name": "snek",
@@ -60,18 +60,18 @@
     "pushedAt": "2023-02-02T09:30:34Z"
   },
   {
-    "name": "tiny-bookstore",
-    "description": "Fullstack web app where you can find/remove/add books to a store",
-    "repoUrl": "https://github.com/simon-off/tiny-bookstore",
-    "demoUrl": "",
-    "topics": ["apollo", "graphql", "react", "typescript"],
-    "createdAt": "2022-12-08T15:00:00Z",
-    "updatedAt": "2023-02-08T15:39:38Z",
-    "pushedAt": "2022-12-20T11:32:11Z"
+    "name": "analog-clock",
+    "description": "Analog clock visualization made with big brain math",
+    "repoUrl": "https://github.com/simon-off/analog-clock",
+    "demoUrl": "https://analogclock2000.netlify.app/",
+    "topics": ["css", "html", "javascript"],
+    "createdAt": "2022-10-12T20:31:37Z",
+    "updatedAt": "2023-02-13T20:26:52Z",
+    "pushedAt": "2023-02-02T09:59:47Z"
   },
   {
     "name": "we-hate-music",
-    "description": "Personal music project site, including a side scrolling spaceship shooter game made in the godot game engine, strangely enough.",
+    "description": "Personal music project site, including a side scrolling spaceship shooter game made in the godot game engine, strangely enough",
     "repoUrl": "",
     "demoUrl": "/wehatemusic",
     "topics": ["html", "css", "javascript", "godot"],
@@ -80,13 +80,13 @@
     "pushedAt": "2023-02-13T20:02:38Z"
   },
   {
-    "name": "analog-clock",
-    "description": "Analog clock visualization made with HTML, CSS & JavaScript (and some big brain math)",
-    "repoUrl": "https://github.com/simon-off/analog-clock",
-    "demoUrl": "https://analogclock2000.netlify.app/",
-    "topics": ["css", "html", "javascript"],
-    "createdAt": "2022-10-12T20:31:37Z",
-    "updatedAt": "2023-02-13T20:26:52Z",
-    "pushedAt": "2023-02-02T09:59:47Z"
+    "name": "auto-slicer",
+    "description": "Python app for splitting up long audio files into smaller slices, with GUI made using the Tkinter framework",
+    "repoUrl": "https://github.com/simon-off/auto-slicer",
+    "demoUrl": "",
+    "topics": ["audio-processing", "python"],
+    "createdAt": "2022-09-15T13:04:32Z",
+    "updatedAt": "2023-02-13T20:22:04Z",
+    "pushedAt": "2022-09-15T13:17:08Z"
   }
 ]
