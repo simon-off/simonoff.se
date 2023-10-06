@@ -4,10 +4,10 @@ const repoNames = [
   "electricity-calculator",
   "folk-fran-skogen",
   "another-movie-database",
-  "snek",
+  "inet-redesign",
   "bpm-tap",
   "frutti-di-mare",
-  "analog-clock",
+  "snek",
   "auto-slicer",
 ];
 
@@ -35,7 +35,8 @@ for (const name of repoNames) {
 
 const json = JSON.stringify(filteredRepos);
 
-fs.writeFile("./scripts/repo-data.json", json, (err) => {
+fs.file;
+fs.writeFile("./repo-data-new.json", json, (err) => {
   if (err) throw err;
   console.log("Saved data successfully!");
 });

@@ -30,14 +30,14 @@
     "pushedAt": "2023-02-02T08:39:59Z"
   },
   {
-    "name": "snek",
-    "description": "Classic snake game (using way too many divs)",
-    "repoUrl": "https://github.com/simon-off/snek",
-    "demoUrl": "https://snek2000.netlify.app/",
-    "topics": ["css", "html", "javascript"],
-    "createdAt": "2022-10-23T23:02:59Z",
-    "updatedAt": "2023-02-13T20:24:37Z",
-    "pushedAt": "2023-02-02T09:20:01Z"
+    "name": "inet-redesign",
+    "description": "Clone & redesign of the home page over at inet.se",
+    "repoUrl": "https://github.com/simon-off/inet-redesign",
+    "demoUrl": "https://inet-redesign.netlify.app/",
+    "topics": ["ecommerce", "react", "tailwindcss", "typescript"],
+    "createdAt": "2023-09-02T17:02:19Z",
+    "updatedAt": "2023-10-06T07:45:10Z",
+    "pushedAt": "2023-10-06T07:50:03Z"
   },
   {
     "name": "bpm-tap",
@@ -50,6 +50,16 @@
     "pushedAt": "2022-10-18T10:20:32Z"
   },
   {
+    "name": "snek",
+    "description": "Classic snake game (using way too many divs)",
+    "repoUrl": "https://github.com/simon-off/snek",
+    "demoUrl": "https://snek2000.netlify.app/",
+    "topics": ["css", "html", "javascript"],
+    "createdAt": "2022-10-23T23:02:59Z",
+    "updatedAt": "2023-02-13T20:24:37Z",
+    "pushedAt": "2023-02-02T09:20:01Z"
+  },
+  {
     "name": "frutti-di-mare",
     "description": "Very strange fish info app made with vanilla JavaScript",
     "repoUrl": "https://github.com/simon-off/frutti-di-mare",
@@ -58,16 +68,6 @@
     "createdAt": "2022-11-01T15:28:35Z",
     "updatedAt": "2023-02-13T20:28:47Z",
     "pushedAt": "2023-02-02T09:30:34Z"
-  },
-  {
-    "name": "analog-clock",
-    "description": "Analog clock visualization made with big brain math",
-    "repoUrl": "https://github.com/simon-off/analog-clock",
-    "demoUrl": "https://analogclock2000.netlify.app/",
-    "topics": ["css", "html", "javascript"],
-    "createdAt": "2022-10-12T20:31:37Z",
-    "updatedAt": "2023-02-13T20:26:52Z",
-    "pushedAt": "2023-02-02T09:59:47Z"
   },
   {
     "name": "we-hate-music",
