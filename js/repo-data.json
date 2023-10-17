@@ -20,6 +20,26 @@
     "pushedAt": "2023-04-02T18:34:33Z"
   },
   {
+    "name": "inet-redesign",
+    "description": "Clone & redesign of the home page over at inet.se made with React, TypeScript & Tailwind CSS",
+    "repoUrl": "https://github.com/simon-off/inet-redesign",
+    "demoUrl": "https://inet-redesign.netlify.app/",
+    "topics": ["ecommerce", "react", "tailwindcss", "typescript"],
+    "createdAt": "2023-09-02T17:02:19Z",
+    "updatedAt": "2023-10-06T07:45:10Z",
+    "pushedAt": "2023-10-06T07:50:03Z"
+  },
+  {
+    "name": "react-interview-questions",
+    "description": "A simple react web app that contains multiple react interview coding challenges",
+    "repoUrl": "https://github.com/simon-off/react-interview-questions",
+    "demoUrl": "https://react-interview-questions.netlify.app",
+    "topics": ["frontend", "react", "scss", "typescript"],
+    "createdAt": "2023-10-09T22:07:23Z",
+    "updatedAt": "2023-10-15T13:10:05Z",
+    "pushedAt": "2023-10-15T13:12:26Z"
+  },
+  {
     "name": "another-movie-database",
     "description": "Movie database app made with React.js & lots of sass, using data from themoviedb.org public api",
     "repoUrl": "https://github.com/simon-off/another-movie-database",
@@ -28,16 +48,6 @@
     "createdAt": "2022-12-02T17:43:14Z",
     "updatedAt": "2023-02-13T20:15:25Z",
     "pushedAt": "2023-02-02T08:39:59Z"
-  },
-  {
-    "name": "inet-redesign",
-    "description": "Clone & redesign of the home page over at inet.se",
-    "repoUrl": "https://github.com/simon-off/inet-redesign",
-    "demoUrl": "https://inet-redesign.netlify.app/",
-    "topics": ["ecommerce", "react", "tailwindcss", "typescript"],
-    "createdAt": "2023-09-02T17:02:19Z",
-    "updatedAt": "2023-10-06T07:45:10Z",
-    "pushedAt": "2023-10-06T07:50:03Z"
   },
   {
     "name": "bpm-tap",
@@ -51,23 +61,13 @@
   },
   {
     "name": "snek",
-    "description": "Classic snake game (using way too many divs)",
+    "description": "Classic snake game (made with way too many divs)",
     "repoUrl": "https://github.com/simon-off/snek",
     "demoUrl": "https://snek2000.netlify.app/",
     "topics": ["css", "html", "javascript"],
     "createdAt": "2022-10-23T23:02:59Z",
     "updatedAt": "2023-02-13T20:24:37Z",
     "pushedAt": "2023-02-02T09:20:01Z"
-  },
-  {
-    "name": "frutti-di-mare",
-    "description": "Very strange fish info app made with vanilla JavaScript",
-    "repoUrl": "https://github.com/simon-off/frutti-di-mare",
-    "demoUrl": "https://fruttidimare.netlify.app/",
-    "topics": ["javascript", "scss", "html"],
-    "createdAt": "2022-11-01T15:28:35Z",
-    "updatedAt": "2023-02-13T20:28:47Z",
-    "pushedAt": "2023-02-02T09:30:34Z"
   },
   {
     "name": "we-hate-music",
@@ -80,13 +80,13 @@
     "pushedAt": "2023-02-13T20:02:38Z"
   },
   {
-    "name": "auto-slicer",
-    "description": "Python app for splitting up long audio files into smaller slices, with GUI made using the Tkinter framework",
-    "repoUrl": "https://github.com/simon-off/auto-slicer",
-    "demoUrl": "",
-    "topics": ["audio-processing", "python"],
-    "createdAt": "2022-09-15T13:04:32Z",
-    "updatedAt": "2023-02-13T20:22:04Z",
-    "pushedAt": "2022-09-15T13:17:08Z"
+    "name": "frutti-di-mare",
+    "description": "Very strange fish info app made with vanilla JavaScript using data from fishwatch.gov",
+    "repoUrl": "https://github.com/simon-off/frutti-di-mare",
+    "demoUrl": "https://fruttidimare.netlify.app/",
+    "topics": ["javascript", "scss", "html"],
+    "createdAt": "2022-11-01T15:28:35Z",
+    "updatedAt": "2023-02-13T20:28:47Z",
+    "pushedAt": "2023-02-02T09:30:34Z"
   }
 ]
