@@ -5,15 +5,15 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@fontsource/jetbrains-mono':
-    specifier: ^5.0.19
-    version: 5.0.19
+  '@fontsource-variable/jetbrains-mono':
+    specifier: ^5.0.20
+    version: 5.0.20
+  '@fontsource-variable/rubik':
+    specifier: ^5.0.21
+    version: 5.0.21
   '@fontsource/poppins':
     specifier: ^5.0.13
     version: 5.0.13
-  '@fontsource/rubik':
-    specifier: ^5.0.19
-    version: 5.0.19
   sass:
     specifier: ^1.74.1
     version: 1.74.1
@@ -235,16 +235,16 @@ packages:
     dev: true
     optional: true
 
-  /@fontsource/jetbrains-mono@5.0.19:
-    resolution: {integrity: sha512-SdwUuvdfuAvGWRRc4LOFRSmDrpkE+vFUpCtOIOUl1PpXdLfeU//93BZiGf7j/oFGSZJbHAurfux2uLT38/NIjw==}
+  /@fontsource-variable/jetbrains-mono@5.0.20:
+    resolution: {integrity: sha512-IWJnmY9vT5Olcac1vzA7FMdnojCrZWMq+g7SqC2jsFpY0LQTjIgp9gBjjw9kUOkNbLw37/evZO4w6rdPeMA68A==}
+    dev: false
+
+  /@fontsource-variable/rubik@5.0.21:
+    resolution: {integrity: sha512-Af9eFEpA9AHC1aizYfKoL4L1sjJvp93nCjhEdPFRDgHo4cO3vNrPkbdg+ER1oO3IASkjFYBPcc35QcpbRTQXTA==}
     dev: false
 
   /@fontsource/poppins@5.0.13:
     resolution: {integrity: sha512-8G9odFoxH43oZpvq43fpGucm8iHm6iatu0M1LIshb+tx3/y6YBXenVED7CI4resvPz6hyDu8a2vHSh9vrpe+wQ==}
-    dev: false
-
-  /@fontsource/rubik@5.0.19:
-    resolution: {integrity: sha512-U5vEMCMBrrXYQ+xBYE/1MbJ049lHpVfyIAc/8eMGk4PC6fkJvVMOBrfIcX05BgXogGBQ6lbxMB/8ZvihZMcefA==}
     dev: false
 
   /@rollup/rollup-android-arm-eabi@4.14.0:
