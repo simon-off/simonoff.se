@@ -65,13 +65,13 @@ nav {
   display: flex;
   row-gap: var(--spacing-block);
   align-items: center;
-  @media screen and (max-width: 700px) {
-    flex-flow: column-reverse;
-  }
   max-width: var(--max-width-s);
   margin-inline: auto;
   padding-inline: var(--spacing-inline);
   padding-top: var(--spacing-block);
+  @media screen and (max-width: 700px) {
+    flex-flow: column-reverse;
+  }
   p {
     padding-top: 1em;
     @media (prefers-reduced-motion: no-preference) {
@@ -153,14 +153,14 @@ nav {
     flex-flow: column-reverse;
   }
   .pic {
-    @media screen and (min-height: 1200px) {
-      padding-top: 2rem;
-    }
     flex-shrink: 0;
     object-fit: contain;
     image-rendering: optimizeQuality;
     user-select: none;
     height: 100%;
+    @media screen and (min-height: 1200px) {
+      padding-top: 2rem;
+    }
     @media (prefers-reduced-motion: no-preference) {
       opacity: 0;
       &.viewed {
@@ -210,7 +210,9 @@ nav {
     &:focus-visible {
       opacity: 1;
       transition-duration: 100ms;
-      box-shadow: 0 0 64px rgba(255 255 255 / 0.1), 0 0 32px rgba(255 255 255 / 0.3);
+      box-shadow:
+        0 0 64px rgba(255 255 255 / 0.1),
+        0 0 32px rgba(255 255 255 / 0.3);
     }
     @media (prefers-reduced-motion: no-preference) {
       filter: opacity(0);
@@ -270,7 +272,7 @@ nav {
       transition: color 1000ms cubic-bezier(0.075, 0.82, 0.165, 1) 0ms;
     }
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       bottom: -0.5em;
       left: 0;

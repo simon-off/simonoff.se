@@ -9,6 +9,12 @@
   --spacing-section: 8vmin;
   --border-radius: 6px;
 
+  --color-text: hsl(0, 0%, 95%);
+  --color-bg: hsl(0, 0%, 5%);
+  --color-border-subtle: hsl(0, 0%, 20%);
+  --color-light-grey: #aaa;
+  --color-grey: grey;
+
   @media screen and (max-width: 900px) {
     --drem: 0.75rem;
   }
@@ -18,10 +24,4 @@
   @media screen and (max-width: 500px) {
     --drem: 0.5rem;
   }
-
-  --color-text: hsl(0, 0%, 95%);
-  --color-bg: hsl(0, 0%, 5%);
-  --color-border-subtle: hsl(0, 0%, 20%);
-  --color-light-grey: #aaa;
-  --color-grey: grey;
 }

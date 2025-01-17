@@ -10,7 +10,7 @@
     "fetch": "node scripts/fetch-repos.js"
   },
   "devDependencies": {
-    "vite": "^5.2.8"
+    "vite": "^6.0.7"
   },
   "dependencies": {
     "@fontsource-variable/jetbrains-mono": "^5.0.20",
