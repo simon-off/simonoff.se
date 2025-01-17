@@ -21,7 +21,7 @@ read -p "Do you want to proceed with the deployment? (yes/no) [yes]: " confirmat
 confirmation=${confirmation:-yes}
 
 if [[ "$confirmation" =~ ^[Yy](es)?$ ]]; then
-    echo "Deploying to server using rsync..."
+    echo "Deploying to server..."
     rsync -ah --delete --info=progress2 --exclude 'wehatemusic/' --exclude '.*' dist/ $HOST:~/public_html
     echo "Deployment complete."
 else
