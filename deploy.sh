@@ -22,7 +22,7 @@ confirmation=${confirmation:-yes}
 
 if [[ "$confirmation" =~ ^[Yy](es)?$ ]]; then
     echo "Deploying to server using rsync..."
-    rsync -ah --delete --exclude 'wehatemusic/' --exclude '.*' dist/ $HOST:~/public_html
+    rsync -ah --delete --info=progress2 --exclude 'wehatemusic/' --exclude '.*' dist/ $HOST:~/public_html
     echo "Deployment complete."
 else
     echo "Deployment cancelled."
