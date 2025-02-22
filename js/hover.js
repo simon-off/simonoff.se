@@ -1,6 +1,6 @@
 const reposElement = document.querySelector(".repos");
 
-reposElement.onmousemove = (e) => {
+reposElement.onmousemove = e => {
   for (const repo of document.querySelectorAll(".repo")) {
     const rect = repo.getBoundingClientRect();
     const x = e.clientX - rect.left;

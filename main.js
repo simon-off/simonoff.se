@@ -1,10 +1,10 @@
-import "@fontsource/poppins/900-italic.css";
-import "@fontsource-variable/rubik";
 import "@fontsource-variable/jetbrains-mono";
-import "./scss/main.scss";
-import "./js/zigzag";
-import "./js/onload";
+import "@fontsource-variable/rubik";
+import "@fontsource/poppins/900-italic.css";
+
+import "./js/mail";
 import "./js/repos";
 import "./js/scroll";
-import "./js/hover";
-import "./js/mail";
+import "./js/zigzag";
+import "./scss/main.scss";
+

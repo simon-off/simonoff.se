@@ -57,12 +57,11 @@ for (const el of navlinks) {
   for (let i = el.children.length - 1; i >= 0; i--) {
     const randomness = getRandomValue(delayTime / 2);
 
-    el.children[i].style.animationDelay = `${
-      Math.abs((i - el.children.length / 2) * delayMultiplier + delayMultiplier / 2) +
+    el.children[i].style.animationDelay = `${Math.abs((i - el.children.length / 2) * delayMultiplier + delayMultiplier / 2) +
       delayMultiplier / 2 +
       randomness +
       Number(el.dataset.delay)
-    }ms`;
+      }ms`;
   }
 }
 

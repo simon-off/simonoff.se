@@ -1,30 +1,20 @@
 import smoothscrollAnchorPolyfill from "smoothscroll-anchor-polyfill";
 smoothscrollAnchorPolyfill;
 
-function getThreshold(el) {
-  getComputedStyle(el).getPropertyValue("--threshold");
-}
-
 //===========================================================//
 //+++ viewing observer +++||---------------------------------//
 //===========================================================//
 
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("viewed", "viewing");
-      } else {
-        entry.target.classList.remove("viewing");
-      }
-    });
-  },
-  { threshold: 0.25 }
-);
+const viewObserver = new IntersectionObserver(entries => {
+  entries.forEach(({ target, isIntersecting }) => {
+    isIntersecting
+      ? target.classList.add("viewed", "viewing")
+      : target.classList.remove("viewing");
+  });
+}, { threshold: 0.25 });
 
-const observeElements = document.querySelectorAll(".observe");
-for (let element of observeElements) {
-  observer.observe(element);
+for (const element of document.querySelectorAll(".observe")) {
+  viewObserver.observe(element);
 }
 
 //===========================================================//
@@ -34,36 +24,30 @@ for (let element of observeElements) {
 let printIntervalIDs = {};
 let deleteIntervalIDs = {};
 
-const typewriterObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      const el = entry.target;
+const typewriterObserver = new IntersectionObserver(entries => {
+  entries.forEach(({ target, isIntersecting }) => {
+    if (isIntersecting) {
+      printIntervalIDs[target.dataset.text] = setInterval(() => {
+        if (target.textContent.length < target.dataset.text.length) {
+          target.textContent += target.dataset.text[target.textContent.length];
+        } else {
+          target.classList.add("full");
+        }
+      }, Math.floor(Math.random() * 100) + 100);
+      clearInterval(deleteIntervalIDs[target.dataset.text]);
+    } else {
+      deleteIntervalIDs[target.dataset.text] = setInterval(() => {
+        if (target.textContent.length > 0) {
+          target.textContent = target.textContent.substring(0, target.textContent.length - 1);
+          target.classList.remove("full");
+        }
+      }, Math.floor(Math.random() * 50) + 75);
+      clearInterval(printIntervalIDs[target.dataset.text]);
+    }
+  });
+}, { threshold: 1 });
 
-      if (entry.isIntersecting) {
-        printIntervalIDs[el.dataset.text] = setInterval(() => {
-          if (el.textContent.length < el.dataset.text.length) {
-            el.textContent += el.dataset.text[el.textContent.length];
-          } else {
-            el.classList.add("full");
-          }
-        }, Math.floor(Math.random() * 100) + 100);
-        clearInterval(deleteIntervalIDs[el.dataset.text]);
-      } else {
-        deleteIntervalIDs[el.dataset.text] = setInterval(() => {
-          if (el.textContent.length > 0) {
-            el.textContent = el.textContent.substring(0, el.textContent.length - 1);
-            el.classList.remove("full");
-          }
-        }, Math.floor(Math.random() * 50) + 75);
-        clearInterval(printIntervalIDs[el.dataset.text]);
-      }
-    });
-  },
-  { threshold: 1 }
-);
-
-const typewriterElements = document.querySelectorAll(".typewriter");
-for (let element of typewriterElements) {
+for (const element of document.querySelectorAll(".typewriter")) {
   element.textContent = "";
   typewriterObserver.observe(element);
 }
@@ -76,17 +60,12 @@ const toTopButton = document.querySelector("#to-top");
 toTopButton.style.setProperty("--transition-time", "500ms");
 toTopButton.style.setProperty("--transition-delay", "150ms");
 
-const topObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        toTopButton.classList.remove("show");
-      } else {
-        toTopButton.classList.add("show");
-      }
-    });
-  },
-  { rootMargin: "-8px" }
-);
+const topObserver = new IntersectionObserver(entries => {
+  entries.forEach(({ isIntersecting }) => {
+    isIntersecting
+      ? toTopButton.classList.remove("show")
+      : toTopButton.classList.add("show");
+  });
+}, { rootMargin: "-8px" });
 
 topObserver.observe(document.querySelector("header"));
