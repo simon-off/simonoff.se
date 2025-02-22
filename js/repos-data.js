@@ -52,7 +52,7 @@ export const repos = [
     name: "We Hate Music",
     description: "Personal music project site, including a side scrolling spaceship shooter game made in the godot game engine",
     repoUrl: null,
-    demoUrl: "/wehatemusic",
+    demoUrl: "https://wehatemusic.simonoff.se/",
     tags: ["html", "css", "javascript", "godot"],
   },
   {
